@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="CorGenPlugin.contribution1"
+            objectClass="org.eclipse.core.resources.IFolder">
+         <menu
+               id="CorGenPlugin.menu1"
+               label="CorGen"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="net.dhleong.corgen.frontend.actions.GenerateCorpusAction"
+               enablesFor="1"
+               id="CorGenPlugin.generateCorpusAction"
+               label="Generate Corpus"
+               menubarPath="CorGenPlugin.menu1/group1">
+         </action>
+         <action
+               class="net.dhleong.corgen.frontend.actions.CleanPreCorpusAction"
+               enablesFor="1"
+               id="CorGenPlugin.cleanPreCorpusAction"
+               label="Clean"
+               menubarPath="CorGenPlugin.menu1/group1">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+   </extension>
+
+</plugin>

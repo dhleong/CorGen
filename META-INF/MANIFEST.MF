@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CorGen Eclipse Plugin
+Bundle-SymbolicName: CorGenPlugin;singleton:=true
+Bundle-Version: 1.0.0.0
+Bundle-Activator: net.dhleong.corgen.frontend.EclipsePluginActivator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.junit
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: .,
+ lib/guava-10.0.1.jar,
+ lib/javassist.jar,
+ lib/jopt-simple-4.2-javadoc.jar,
+ lib/jopt-simple-4.2.jar,
+ lib/reflections-0.9.5-javadoc.jar,
+ lib/reflections-0.9.5.jar,
+ lib/slf4j-api-1.6.4.jar,
+ lib/slf4j-nop-1.6.4.jar
+Export-Package: net.dhleong.corgen,
+ net.dhleong.corgen.plugins
+Import-Package: net.dhleong.corgen
